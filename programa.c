@@ -7,7 +7,7 @@
 /* Programacion avanzada y metodos numeros */
 /* Grupo:01 */
 /* Tercera modificacion */
-/* 13/09/2015
+/* 13/09/2015 */
 
 /* Estructura para menu */
 struct menu{
