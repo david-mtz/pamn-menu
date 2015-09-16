@@ -51,7 +51,7 @@ int dibujarMenu()
 		printf("%d. %s \t\t $%.2f\n",z+1,menu[z].descripcion, menu[z].precio);
 	}
 	printf("%d. Salir\n",cantidadPro+1);
-	printf("Programa elaborado por: Equipo Azul.");
+	printf("Programa elaborado por: Equipo Azul.\n");
 	printf("Elegir opcion del menu: ");
 	scanf("%d",&opcion);
 	return opcion; // Retorno de la variable
