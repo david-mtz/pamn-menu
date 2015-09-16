@@ -51,7 +51,8 @@ int dibujarMenu()
 		printf("%d. %s \t\t $%.2f\n",z+1,menu[z].descripcion, menu[z].precio);
 	}
 	printf("%d. Salir\n",cantidadPro+1);
-	printf("Elegir opcion: ");
+	printf("Programa elaborado por: Equipo Azul.");
+	printf("Elegir opcion del menu: ");
 	scanf("%d",&opcion);
 	return opcion; // Retorno de la variable
 }
@@ -106,7 +107,7 @@ void imprimirOrden()
 		scanf("%f", &importe); // Se pregunta la cantidad con la que se va a pagar
 		if(importe >= total) // Si es mayor o igual que el total del pedido realiza la transaccion
 		{
-			printf("Cambio: $%.2f\nGracias por su preferencia!!\n",importe-total);
+			printf("Cambio: $%.2f\nGracias por su preferencia!!\nPrograma elaborado por: Equipo Azul.",importe-total);
 			GuardarOrden(total); // Almacena la orden
 			memset(&orden, 0, sizeof orden); // Libera los datos de la estructura
 			productos=0; // Inicializa de nuevo los productos, listo para una nueva orden
@@ -133,7 +134,7 @@ main()
 		menuop = dibujarMenu(); // Se le asigna a la variable lo que retorne la funcion dibujarMenu()
 		if(menuop == (cantidadPro+1)) // Cuando la opcion es = salir, finaliza el programa
 		{
-			printf("Ha finalizado el programa.");
+			printf("Ha finalizado el programa.\nPrograma elaborado por: Equipo Azul.");
 			exit(0);
 		}
 		if(strlen(menu[menuop-1].descripcion) != 0) // Comprueba que exista en el arreglo de menu el producto seleccionado
